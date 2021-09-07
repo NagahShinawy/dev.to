@@ -15,3 +15,12 @@ print(f"{profit:,}")
 profit = 10_000_000.914949
 
 print(f"{profit:.2f}")
+
+# 2. Assign a value with if statement
+
+UNDERAGE = 18
+
+age = 15
+status = "Adult" if age >= UNDERAGE else "Still Under Age"
+
+print(status)
