@@ -76,7 +76,16 @@ double = [num * 2 for num in numbers]
 print(numbers)
 print(double)
 
+users = ["john", "loen", "smiths", "adam", "jose"]
+to_title = [user.title() for user in users]
+to_upper = [user.upper() for user in users]
+
+print(to_title)
+print(to_upper)
 # 6. Unpacking
+
+print("*" * 10, "6. Unpacking", "*" * 10)
+
 
 themes = ("dark", "white", "red", "green")
 shape = (50, 7)
@@ -94,3 +103,44 @@ rows, cols = shape
 
 print(shape)
 print(rows, cols)
+
+print("######")
+
+users = ["John", "Loen", "Smiths", "Adam", "Jose"]
+
+john, leon, *others = users
+
+print(users)
+
+print(john)
+print(leon)
+print(others)
+
+perms = ("read", "create", "update", "delete", "no access")
+
+r, *create_update_delete, no_access = perms
+
+print("######")
+
+print(perms)
+print(r)
+print(create_update_delete)  # list of "create", "update", "delete"
+print(no_access)
+
+
+print()
+
+# 7. For~Else
+
+print("*" * 10, "# 7. For~Else", "*" * 10)
+
+BLOOD_TYPES = ("A+", "A-", "B+", "B-", "O+", "O-", "AB+", "AB-")
+
+MINE = "A+"
+
+# else statement also be used after for loop, IT IS EXECUTED AFTER FOR LOOP
+for blood in BLOOD_TYPES:
+    print(blood)
+
+else:
+    print("LIST OF BLOOD TYPES HAS BEEN COMPLETED")
