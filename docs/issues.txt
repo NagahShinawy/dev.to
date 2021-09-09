@@ -1,0 +1,4 @@
+1- check from 16 to 20 here
+https://dev.to/duomly/20-useful-python-tips-and-tricks-you-should-know-3h8c
+
+# all of https://dev.to/python_engineer/11-tips-and-tricks-to-write-better-python-code-5fck
