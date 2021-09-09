@@ -55,3 +55,17 @@ length = {name: len(name) for name in names}
 
 print(names)
 print(length)
+
+
+# Set Comprehension
+
+
+langs = ("php", "html", "js", "css", "sql")
+
+print(langs)
+
+langs = {lang.upper() for lang in langs}
+
+print(langs)
+print(type(langs))  # set
+
