@@ -30,3 +30,28 @@ blk, wht, *others = THEMES
 
 print(blk, wht)
 print(others)  # list of other items
+
+
+print("#" * 100)
+# 6. Swap Variables
+
+row = 10
+col = 8
+
+print(row, col)
+
+temp = row
+row = col
+col = temp
+
+print(row, col)
+
+
+width = 9
+
+height = 5
+
+print(width, height)
+
+width, height = height, width
+print(width, height)
