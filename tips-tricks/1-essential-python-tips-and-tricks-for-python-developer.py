@@ -2,6 +2,7 @@ double = lambda x: x * 2
 
 
 DAYS = 7
+TEN = 10
 
 
 print(double)  # <function <lambda> at 0x0000015298548798>
@@ -90,5 +91,16 @@ for d in dys:
     print(d, end=" ")  # 3 4 5 6 7
 
 
+print()
+print("#" * 100)
+
+ten = (num for num in range(1, TEN + 1))
+
+print(ten)
+
+for n in ten:
+    print(n, end=" ")
+
+print()
 
 
