@@ -121,3 +121,18 @@ width, height, depth = dimension
 print(width)
 print(height)
 print(depth)
+
+# String Concatenation with delimiter
+
+emails = ["john@test.com", "james@test.com", "loen@test.com", "adam@test.com"]
+
+recipients = ";".join(emails)
+
+print(emails)
+print(recipients)
+
+commands = ("cd ..", "ls")
+
+execute = " & ".join(commands)
+
+print(execute)
