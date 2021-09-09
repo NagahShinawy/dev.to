@@ -27,3 +27,31 @@ for even in evens:
 
 print()
 
+
+# SELF CALLED LAMBDA
+
+plus3 = (lambda a: a+3)(8)
+
+print(plus3)  # 11
+
+# List Comprehension
+
+doubles = [(num, num * 2) for num in numbers]
+
+print(doubles)
+
+evens = [num for num in numbers if num % 2 == 0]
+odds = [num for num in numbers if num % 2 != 0]
+
+
+print(evens)
+print(odds)
+
+# Dict Comprehension
+
+names = ["John", "Loen", "James", "Smiths", "Django", "PHP"]
+
+length = {name: len(name) for name in names}
+
+print(names)
+print(length)
