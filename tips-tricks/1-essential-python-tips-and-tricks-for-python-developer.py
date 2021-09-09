@@ -111,3 +111,13 @@ gender = "Female" if is_female else "Male"
 
 print(gender)
 
+# Tuple Unpacking
+
+dimension = (3, 6, 10)
+
+print(dimension)
+width, height, depth = dimension
+
+print(width)
+print(height)
+print(depth)
