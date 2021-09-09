@@ -103,4 +103,11 @@ for n in ten:
 
 print()
 
+# Shorthand If Else
+
+is_female = True
+
+gender = "Female" if is_female else "Male"
+
+print(gender)
 
