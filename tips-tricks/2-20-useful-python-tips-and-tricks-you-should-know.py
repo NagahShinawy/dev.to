@@ -55,3 +55,30 @@ print(width, height)
 
 width, height = height, width
 print(width, height)
+
+
+# 7. Merge Dictionaries
+
+profile = {"username": "john", "email": "john@test.com", "dob": "13-05-1999"}
+
+vital_sign = {
+    "tall": "170cm",
+    "weight": "80kg",
+}
+
+
+full_info = profile.update(vital_sign)
+
+print(full_info)  # None
+
+
+print(
+    profile
+)  # {'username': 'john', 'email': 'john@test.com', 'dob': '13-05-1999', 'tall': '170cm', 'weight': '80kg'}
+
+
+full_info = {**profile, **vital_sign}
+
+print(
+    full_info
+)  # {'username': 'john', 'email': 'john@test.com', 'dob': '13-05-1999', 'tall': '170cm', 'weight': '80kg'}
