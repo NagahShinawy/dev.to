@@ -1,5 +1,9 @@
 double = lambda x: x * 2
 
+
+DAYS = 7
+
+
 print(double)  # <function <lambda> at 0x0000015298548798>
 
 print(double(5))  # 10 ==> 5 * 2
@@ -68,4 +72,23 @@ langs = {lang.upper() for lang in langs}
 
 print(langs)
 print(type(langs))  # set
+
+
+def days():
+    for day in range(1, DAYS + 1):
+        yield day
+
+
+dys = days()
+
+print(dys)  # <generator object days at 0x00000212FF54D348>
+
+print(dys.__next__())  # 1
+print(dys.__next__())  # 2
+
+for d in dys:
+    print(d, end=" ")  # 3 4 5 6 7
+
+
+
 
