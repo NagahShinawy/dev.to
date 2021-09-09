@@ -136,3 +136,13 @@ commands = ("cd ..", "ls")
 execute = " & ".join(commands)
 
 print(execute)
+
+
+# Removing duplicates items from a list
+grades = [20, 22, 24, 26, 28, 28, 20, 30, 24]
+
+print(len(grades))
+uniques = set(grades)
+
+print(uniques)
+print(len(uniques))
