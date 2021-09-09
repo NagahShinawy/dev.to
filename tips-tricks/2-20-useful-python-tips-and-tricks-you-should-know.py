@@ -111,9 +111,43 @@ for name, grade in info:
 
 # 14. Sort Sequences
 
-degrees = [("John", 50), ("James", 20), ("Loen", 60), ("Smith", 90), ]
+degrees = [
+    ("John", 50),
+    ("James", 20),
+    ("Loen", 60),
+    ("Smith", 90),
+]
 
 sorted_by_degree = sorted(degrees, key=lambda student: student[-1])
 
 print(degrees)
 print(sorted_by_degree)
+
+
+# 15. Sort Dictionaries
+
+books = {
+    "clean code": 34,
+    "clean arch": 30,
+    "django for pro": 50,
+    "python basics": 10,
+}
+
+print(sorted(books))  # ['clean arch', 'clean code', 'django for pro', 'python basics']
+print(
+    sorted(books.keys())
+)  # ['clean arch', 'clean code', 'django for pro', 'python basics']
+print(sorted(books.values()))  # [10, 30, 34, 50]
+
+by_price = sorted(books.items(), key=lambda book: book[-1])
+
+print(
+    by_price
+)  # [('python basics', 10), ('clean arch', 30), ('clean code', 34), ('django for pro', 50)]
+
+sorted_by_price = {book[0]: book[1] for book in by_price}
+
+
+print(
+    sorted_by_price
+)  # {'python basics': 10, 'clean arch': 30, 'clean code': 34, 'django for pro': 50}
